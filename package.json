@@ -1,0 +1,14 @@
+{
+  "name": "backend_mega_project",
+  "version": "1.0.0",
+  "description": "A meag Backend Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Backend"
+  ],
+  "author": "Sanidhya Agarwal",
+  "license": "ISC"
+}
