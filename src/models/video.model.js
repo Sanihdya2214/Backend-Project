@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+import mongoose, {Schema} from 'mongoose'
 import { JsonWebTokenError } from 'jsonwebtoken'
 import bcrypt from "bcrypt"
 

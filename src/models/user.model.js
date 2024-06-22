@@ -1,5 +1,5 @@
-import mongoose from "mongoose"
-import { JsonWebTokenError } from 'jsonwebtoken'
+import mongoose ,{Schema} from "mongoose"
+import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt"
 
 const UserSchema= new mongoose.Schema({
@@ -60,7 +60,7 @@ const UserSchema= new mongoose.Schema({
 
 },{timestamps:true})
 
-/*This is a custom hook made by thedeveloper*/UserSchema.pre("save",async function(next){
+/*This is a custom hook made by the developer*/UserSchema.pre("save",async function(next){
       if(!this.isModified("password")) return next() //This sees that if the password is modiufided or not
        //because we do not want to encrypt password everytme we hit save 
 
